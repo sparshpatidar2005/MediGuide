@@ -1,103 +1,229 @@
-# 🧠💡 MediGuide – Your AI-Powered Personal Health Companion
+# 🧠 MediGuide — AI-Powered Personal Health Companion
 
-MediGuide is a revolutionary healthcare app that brings together the power of AI-based disease prediction, intelligent symptom analysis, and instant doctor appointment booking — all in one easy-to-use platform. It’s designed to make healthcare more accessible, proactive, and personalized for everyone.
+MediGuide is a **team-developed healthcare application** that integrates machine learning-based disease prediction, symptom analysis, a medical chatbot, and doctor appointment features into a single mobile platform. The project aims to make preliminary health assessment more accessible through an intuitive mobile interface.
 
-![React Native](https://img.shields.io/badge/ReactNative-MobileApp-blue?style=for-the-badge)
-![Flask](https://img.shields.io/badge/Flask-Backend-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Version-1.0.0-purple?style=for-the-badge)
+> **Project Type:** Team Project  
+> **My Role:** Machine Learning (ML)  
+> **Focus:** Data preprocessing, model development, training, and evaluation for disease prediction.
+
+![React Native](https://img.shields.io/badge/React_Native-Mobile_App-blue?style=for-the-badge&logo=react)
+![Flask](https://img.shields.io/badge/Flask-Backend-green?style=for-the-badge&logo=flask)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-Disease_Prediction-purple?style=for-the-badge)
+![Project](https://img.shields.io/badge/Project-Team_Project-orange?style=for-the-badge)
+
+---
 
 ## 📽️ Demo Video
 
-🎬 [Click to Watch the Demo](https://drive.google.com/file/d/1W4khkqilvQFg58eGDDLM0P9rhx5bZ7k5/view?usp=drivesdk)
+Watch the MediGuide application demo:
 
-## ✨ Features
+[▶️ **Watch the Demo Video on Google Drive**](https://drive.google.com/file/d/1W4khkqilvQFg58eGDDLM0P9rhx5bZ7k5/view?usp=drivesdk)
 
-- 🩺 **Advanced Disease Prediction**
-  - Predicts:
-    - ✅ Heart Disease
-    - ✅ Diabetes
-    - ✅ Liver Disease
-    - ✅ Lung Cancer
-    - ✅ Parkinson’s
-    - ✅ Common Diseases (symptom-based)
-  - Uses ML models trained on real medical datasets  
-  - Detects **over 1,082 diseases**
+---
 
-- 🤖 **24/7 Intelligent Medical Chatbot**
-  - Understands your symptoms
-  - Provides real-time health insights
-  - Always available for advice
+## ✨ Key Features
 
-- 📅 **Instant Doctor Appointment Booking**
-  - Connects users to doctors based on predictions
-  - Fast, relevant scheduling  
-  - All in one smooth flow
+### 🩺 Machine Learning-Based Disease Prediction
+- Supports disease prediction workflows for conditions including:
+  - Heart disease
+  - Diabetes
+  - Liver disease
+  - Lung cancer
+  - Parkinson's disease
+- Includes symptom-based common disease prediction.
+- Uses trained machine learning models to process relevant input features and generate predictions.
 
-- 📱 **Beautiful React Native UI**
-  - Gradient cards
-  - Smooth animations
-  - Clean mobile-first design
+### 🤖 Medical Chatbot
+- Provides a conversational interface for health-related questions and symptom discussions.
+- Helps users explore preliminary health information.
 
-- 🔄 **Real-time backend API Integration**
+### 📅 Doctor and Appointment Features
+- Includes doctor-related screens and appointment workflows.
+- Connects the health assessment experience with doctor-related functionality.
 
-## 🌟 Why MediGuide is Unique
+### 📱 Mobile Application
+- Built with React Native and TypeScript.
+- Includes home, prediction, result, doctor, appointment, and profile screens.
+- Communicates with a backend API.
 
-- Combines **AI prediction**, **symptom checker**, and **doctor booking**
-- Detects over **1,082 diseases**
-- Bridges the gap between self-assessment and professional care
-- Simple, secure, intuitive interface
-- Helps catch illnesses early for faster, better outcomes  
-- Like having a medical expert in your pocket 📱
+---
 
+## 👨‍💻 My Contribution — Machine Learning
 
+MediGuide was developed collaboratively as a team project. **My primary responsibility was the machine learning component**, rather than claiming ownership of the entire mobile application or backend.
 
-## 🧠 Backend Setup (Flask + ML)
+My ML work focused on the disease-prediction pipeline, including the following areas as applicable to the individual models:
 
-The backend is built using Flask and serves ML models as REST APIs.
+- **Data preparation:** Working with disease datasets and preparing features for model development.
+- **Data preprocessing:** Handling data quality issues and transforming input features into a suitable format for training.
+- **Model development:** Working with machine learning models for supported disease-prediction tasks.
+- **Training and evaluation:** Developing and evaluating models to assess their predictive performance.
+- **Model integration support:** Preparing trained model artifacts for use by the application's prediction workflows.
 
-### ▶️ Run the Backend
+The repository also contains disease-specific Jupyter notebooks, including `diabetes.ipynb`, `heart-disease-100.ipynb`, `liver.ipynb`, `lung-cancer-prediction.ipynb`, `parkinson.ipynb`, and `common-diseases.ipynb`.
+
+These notebooks provide the basis for exploring the individual ML workflows.
+
+### Team Collaboration
+
+The project brings together the machine learning component, backend API, and mobile frontend. My contribution was focused on ML, while the overall application was built collaboratively with the team.
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technologies |
+|---|---|
+| Mobile frontend | React Native, TypeScript, JavaScript |
+| Backend | Python, Flask |
+| Machine learning | Python, disease-specific ML models |
+| Data and experimentation | Jupyter Notebook, CSV datasets |
+| Mobile platforms | Android and iOS project structure |
+| API communication | Frontend-to-backend API integration |
+
+---
+
+## 📱 App Screenshots
+
+The following screenshots show key screens from the MediGuide mobile application.
+
+### 🏠 Home Screen
+![MediGuide Home Screen](./screenshot/home.png)
+
+### 🩺 Disease Prediction
+![MediGuide Disease Prediction](./screenshot/predict.png)
+
+### 📊 Prediction Result
+![MediGuide Prediction Result](./screenshot/result.png)
+
+### 🤖 Medical Chatbot
+![MediGuide Chatbot](./screenshot/chatbot.png)
+
+### 👨‍⚕️ Doctors
+![MediGuide Doctors](./screenshot/doctors.png)
+
+### 📅 Appointment
+![MediGuide Appointment](./screenshot/appointment.png)
+
+### 👤 User Profile
+![MediGuide Profile](./screenshot/profile.png)
+
+---
+
+## 📂 Project Structure
+
+```text
+MediGuide/
+├── App.tsx
+├── app.json
+├── package.json
+├── assets/                  # App images and visual assets
+├── screens/                 # Mobile application screens
+├── navigation/              # App navigation
+├── core/                    # Shared app code and API integration
+├── backend/
+│   ├── app.py               # Flask backend entry point
+│   ├── model/               # Model artifacts and datasets
+│   ├── templates/            # HTML templates
+│   └── static/              # Static files
+├── screenshot/              # Application screenshots
+├── common-diseases.ipynb     # Common disease prediction notebook
+├── diabetes.ipynb            # Diabetes ML notebook
+├── heart-disease-100.ipynb    # Heart disease ML notebook
+├── liver.ipynb                # Liver disease ML notebook
+├── lung-cancer-prediction.ipynb
+└── parkinson.ipynb             # Parkinson's ML notebook
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Install the following before running the project:
+
+- Node.js and npm
+- Python 3
+- Android Studio and an Android emulator, or a connected Android device
+- Required Python and JavaScript dependencies
+
+### 1. Clone the Repository
 
 ```bash
-cd Backend
-python3 -m venv venv
-source venv/bin/activate     # On Windows: venv\Scripts\activate
+git clone https://github.com/sparshpatidar2005/MediGuide.git
+cd MediGuide
+```
+
+### 2. Install Frontend Dependencies
+
+From the project root:
+
+```bash
+npm install
+```
+
+### 3. Set Up the Python Backend
+
+```bash
+cd backend
+python -m venv venv
+```
+
+Activate the environment on Windows:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+On macOS or Linux:
+
+```bash
+source venv/bin/activate
+```
+
+Install backend dependencies using the project's requirements file, if available:
+
+```bash
 pip install -r requirements.txt
+```
+
+Then start the backend:
+
+```bash
 python app.py
 ```
 
-##📱 Frontend Setup (React Native)
+**Note:** Verify the backend dependency file and required model artifacts are present before running the backend. The actual model binaries must be available for the corresponding prediction endpoints to work.
 
--The frontend uses React Native with animated screens, chatbot integration, and seamless API calls to the backend.
+### 4. Run the Mobile Application
 
--🛠 Installation
--From the root directory:
+Open a separate terminal in the project root.
 
-```bash
-npm install   # or yarn install
-```
-
-## ▶️ Run the App
--For Android:
+For Android:
 
 ```bash
 npx react-native run-android
 ```
 
-
-
--Make sure Android emulator is running or your device is connected.
--For iOS (Mac Only):
+For iOS on macOS:
 
 ```bash
 npx pod-install ios
 npx react-native run-ios
 ```
-## 📱 App Screens — Preview
 
-Take a quick look at the key screens of the MediGuide mobile app:
+Ensure the backend URL in the frontend configuration is appropriate for your device or emulator.
 
-| 🏠 Home Screen | 📊 Disease Prediction | 💬 ChatBot | 📅 Appointment
+---
 
-|:----------------|:------------------------|:-----------|
-| ![Home Screen](./screenshot/home.png) | ![Disease Prediction](./screenshot/predict.png) | ![ChatBot](./screenshot/chatbot.png) | ![Appointment](./screenshot/appointment.png) |   ![Result](./screenshot/result.png) | ![Profile](./screenshot/profile.png) | ![Doctor](./screenshot/doctors.png) | 
+## ⚠️ Project Disclaimer
+
+MediGuide is an educational software project intended to demonstrate machine learning and healthcare application integration. Its predictions and chatbot responses are not a substitute for professional medical diagnosis, treatment, or advice.
+
+---
+
+## 🤝 Acknowledgements
+
+Developed collaboratively as a team project, combining machine learning, backend services, and mobile application development.
 
